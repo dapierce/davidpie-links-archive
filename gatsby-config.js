@@ -1,8 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `david🥧`,
+    description: `Personal website of David Aaron Pierce, web developer based in Seattle.`,
+    author: `@da_pierce`,
+    links: [
+      {
+        name: `Github`,
+        link: `https://github.com/dapierce`,
+      },
+      {
+        name: `Gitlab`,
+        link: `https://gitlab.com/dapierce`,
+      },
+      {
+        name: `Keybase`,
+        link: `https://keybase.io/dapierce`,
+      },
+      {
+        name: `Ko-fi`,
+        link: `https://ko-fi.com/dapierce`,
+      },
+    ],
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
