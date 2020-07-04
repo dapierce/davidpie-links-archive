@@ -12,6 +12,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Nav from "../components/nav"
 import Footer from "../components/footer"
 
+import "typeface-lato"
+import "typeface-work-sans"
+
 import "./layout.css"
 
 const Layout = ({ children }) => {

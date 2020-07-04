@@ -4,14 +4,14 @@ import React from "react"
 
 import styles from "./styles/nav.module.css"
 
-const activeNavlinkStyle = {
-  color: `var(--text-color)`,
-  padding: `3px 3px`,
-  margin: `0 -3px`,
-  background: `white`,
-  backgroundPosition: `0 calc(100% + 1px)`,
-  borderRadius: `6px`,
-}
+// const activeNavlinkStyle = {
+//   color: `var(--text-color)`,
+//   padding: `3px 3px`,
+//   margin: `0 -3px`,
+//   background: `white`,
+//   backgroundPosition: `0 calc(100% + 1px)`,
+//   borderRadius: `6px`,
+// }
 
 const Nav = ({ location }) => (
   <nav className={styles.nav}>

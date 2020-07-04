@@ -8,6 +8,7 @@ import {
   faKeybase,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
+import { faCoffee } from "@fortawesome/free-solid-svg-icons"
 
 const Links = () => (
   <div className="links">
@@ -47,9 +48,7 @@ const Links = () => (
       </li>
       <li>
         <a href="https://ko-fi.com/dapierce" aria-label="Ko-fi">
-          <span role="img" aria-label="coffee">
-            ☕
-          </span>
+          <FontAwesomeIcon icon={faCoffee} />
           <span className="link-label">Buy me coffee!</span>
         </a>
       </li>

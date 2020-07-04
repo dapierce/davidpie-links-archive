@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
@@ -18,7 +17,8 @@ const IndexPage = () => (
       <Greeting />
     </h1>
     <p>
-      This is my home on the web!
+      I'm <strong>David Aaron Pierce</strong>, a student software dev 🔥💻🔥 and
+      this is my home on the web!
       <br />
       ...right now it's a collection of links!
     </p>

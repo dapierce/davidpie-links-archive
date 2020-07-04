@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/dapierce
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://davidaaronpierce.com
+  * I am dapierce (https://keybase.io/dapierce) on keybase.
+  * I have a public key ASCyOWI5VKHAESXlXKgekNGU4pEGWkFo743oPP2YA1t2HQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010786ff082cf1f4953d364ad972b5589fe4c69761ebb597276cc7a7253d2a4bc20a",
+      "host": "keybase.io",
+      "kid": "0120b239623954a1c01125e55ca81e90d194e291065a4168ef8de83cfd98035b761d0a",
+      "uid": "d514504abea21541e03c3114113cd719",
+      "username": "dapierce"
+    },
+    "merkle_root": {
+      "ctime": 1593817048,
+      "hash": "98bcbf076b0b8fb2a32971661ecdedc91b031f57bb2c271e6cec381c9b85cdeafb16083b20cbdabb25ce12b8803f83c09acee9a5e0331e7e6932562d700a70b5",
+      "hash_meta": "22b1acc62123b0f6e24ced9ded6e9d5c32644827be62b9ff1dc8368002713a7c",
+      "seqno": 16860784
+    },
+    "service": {
+      "entropy": "rn0aGEaJa+9ahb8s+DeP2kuk",
+      "hostname": "davidaaronpierce.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1593817073,
+  "expire_in": 504576000,
+  "prev": "7ac0d341dad67e09bb9bfe82fa49636620fe88942f9ded2eefba92b08f4257fa",
+  "seqno": 38,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgsjliOVShwBEl5VyoHpDRlOKRBlpBaO+N6Dz9mANbdh0Kp3BheWxvYWTESpcCJsQgesDTQdrWfgm7m/6C+kljZiD+iJQvne0u77qSsI9CV/rEIPlRCYZnWZH0BI757yM8OBzS3WRpQ0YYb77pkpFNcqyrAgHCo3NpZ8RAiyKpJys54Qj1ZHyY4o7HOjWnHHexgeal0KxRY/w1FjQh1cC+SGbqUvqEyfd2gH6gHQuv3STjzhXxgknIxsm9DqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIIltB44R5pNzmLexnhHmxY6xsoS2On4MLyATqXiH5me/o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/dapierce
+
+==================================================================
