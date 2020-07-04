@@ -1,5 +1,6 @@
 import React from "react"
 
+import Button from "./button"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGithub,
@@ -14,43 +15,58 @@ const Links = () => (
   <div className="links">
     <ul>
       <li>
-        <a href="https://github.com/dapierce" aria-label="GitHub">
-          <FontAwesomeIcon icon={faGithub} />
-          <span className="link-label">GitHub</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://gitlab.com/dapierce" aria-label="GitLab">
-          <FontAwesomeIcon icon={faGitlab} />
-          <span className="link-label">GitLab</span>
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.linkedin.com/in/piercedavid/"
-          aria-label="LinkedIn"
+        <Button
+          to="https://github.com/dapierce"
+          ariaLabel="GitHub"
+          icon={faGithub}
         >
-          <FontAwesomeIcon icon={faLinkedin} />
-          <span className="link-label">LinkedIn</span>
-        </a>
+          GitHub
+        </Button>
       </li>
       <li>
-        <a href="https://twitter.com/da_pierce" aria-label="Twitter">
-          <FontAwesomeIcon icon={faTwitter} />
-          <span className="link-label">Twitter</span>
-        </a>
+        <Button
+          to="https://gitlab.com/dapierce"
+          ariaLabel="GitLab"
+          icon={faGitlab}
+        >
+          GitLab
+        </Button>
       </li>
       <li>
-        <a href="https://keybase.io/dapierce" aria-label="Keybase">
-          <FontAwesomeIcon icon={faKeybase} />
-          <span className="link-label">Keybase</span>
-        </a>
+        <Button
+          to="https://www.linkedin.com/in/piercedavid/"
+          ariaLabel="LinkedIn"
+          icon={faLinkedin}
+        >
+          LinkedIn
+        </Button>
       </li>
       <li>
-        <a href="https://ko-fi.com/dapierce" aria-label="Ko-fi">
-          <FontAwesomeIcon icon={faCoffee} />
-          <span className="link-label">Buy me coffee!</span>
-        </a>
+        <Button
+          to="https://twitter.com/da_pierce"
+          ariaLabel="Twitter"
+          icon={faTwitter}
+        >
+          Twitter
+        </Button>
+      </li>
+      <li>
+        <Button
+          to="https://keybase.io/dapierce"
+          ariaLabel="Keybase"
+          icon={faKeybase}
+        >
+          Keybase
+        </Button>
+      </li>
+      <li>
+        <Button
+          to="https://ko-fi.com/dapierce"
+          ariaLabel="Ko-fi"
+          icon={faCoffee}
+        >
+          Buy me coffee!
+        </Button>
       </li>
     </ul>
   </div>
