@@ -1,6 +1,6 @@
 :root {
   /* colors */
-  --text-black-color: #444444;
+  --text-color-black: #444444;
   --gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
   --gradient-alpha: linear-gradient(
     140deg,
@@ -61,7 +61,7 @@ time, mark, audio, video {
 }
 
 body {
-  color: var(--text-black-color);
+  color: var(--text-color-black);
   font-family: var(--body-fonts);
   font-weight: var(--body-reg-weight);
 }
@@ -116,12 +116,15 @@ p {
 p a {
   transition: all 0.2s ease-in-out;
 }
+a:focus {
+  outline: dotted 2px var(--text-color-black);
+}
 main {
   text-align: center;
   margin-bottom: 1rem;
 }
 main p a {
-  color: var(--text-black-color);
+  color: var(--text-color-black);
   font-weight: var(--body-bold-weight);
   text-decoration: none;
   padding: 3px 0;
@@ -145,7 +148,7 @@ main p a:hover {
 }
 main p a:active,
 main p a:focus {
-  color: var(--text-black-color);
+  color: var(--text-color-black);
   padding: 3px 3px;
   margin: 0 -3px;
   background: var(--gradient);
@@ -154,7 +157,7 @@ main p a:focus {
 }
 
 footer p a {
-  color: var(--text-black-color);
+  color: var(--text-color-black);
   font-weight: var(--body-bold-weight);
   text-decoration: none;
   padding: 3px 0;
