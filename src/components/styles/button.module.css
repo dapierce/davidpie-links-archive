@@ -17,7 +17,7 @@
 }
 .button:hover,
 .button:active {
-  background: var(--color-seaform);
+  background: var(--gradient-alpha-light);
 }
 .button:active {
   position: relative;

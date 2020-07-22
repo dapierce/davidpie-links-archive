@@ -4,14 +4,13 @@ import React from "react"
 
 import styles from "./styles/nav.module.css"
 
-// const activeNavlinkStyle = {
-//   color: `var(--text-color)`,
-//   padding: `3px 3px`,
-//   margin: `0 -3px`,
-//   background: `white`,
-//   backgroundPosition: `0 calc(100% + 1px)`,
-//   borderRadius: `6px`,
-// }
+const activeNavlinkStyle = {
+  color: `var(--text-color)`,
+  padding: `4px 4px`,
+  margin: `-4px -4px`,
+  background: `white`,
+  borderRadius: `6px`,
+}
 
 const Nav = ({ location }) => (
   <nav className={styles.nav}>
@@ -22,20 +21,15 @@ const Nav = ({ location }) => (
             to="/"
             activeStyle={{ backgroundColor: `white`, color: `#444444` }}
           >
-            david
             <span role="img" aria-label="pie">
               🥧
             </span>
+            <span className={styles.title__text}> David Pierce</span>
           </Link>
         </li>
       </ul>
-      {/* <ul className={styles.navlinks}>
-        <li>
-          <Link to="/about" activeStyle={activeNavlinkStyle}>
-            About
-          </Link>
-        </li>
-        <li>
+      <ul className={styles.navlinks}>
+        {/* <li>
           <Link to="/projects" activeStyle={activeNavlinkStyle}>
             Projects
           </Link>
@@ -49,8 +43,8 @@ const Nav = ({ location }) => (
           <Link to="/resume" activeStyle={activeNavlinkStyle}>
             Resume
           </Link>
-        </li>
-      </ul> */}
+        </li> */}
+      </ul>
     </div>
   </nav>
 )

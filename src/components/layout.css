@@ -2,10 +2,15 @@
   /* colors */
   --text-color-black: #444444;
   --gradient: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
-  --gradient-alpha: linear-gradient(
+  --gradient-alpha-light: linear-gradient(
     140deg,
-    rgba(95, 197, 180, 0.82) 15%,
-    rgba(51, 204, 255, 0.82)
+    rgba(95, 197, 180, 0.6) 15%,
+    rgba(51, 204, 255, 0.6)
+  );
+  --gradient-alpha-dark: linear-gradient(
+    140deg,
+    rgba(95, 197, 180, 0.8) 15%,
+    rgba(51, 204, 255, 0.8)
   );
   --color-seaform: rgba(95, 197, 180, 0.8);
   --color-blue: rgb(51, 204, 255);
@@ -119,6 +124,9 @@ p a {
 a:focus {
   outline: dotted 2px var(--text-color-black);
 }
+a:active {
+  outline: none;
+}
 main {
   text-align: center;
   margin-bottom: 1rem;
@@ -127,64 +135,67 @@ main p a {
   color: var(--text-color-black);
   font-weight: var(--body-bold-weight);
   text-decoration: none;
-  padding: 3px 0;
-  border-bottom: 3px solid #5fc5b4;
-  transition: background-position 200ms ease-in-out;
-  background-size: 100% 200%;
-  background-position: 0 0;
+  transition: background-size 50ms ease-in-out;
+  background-size: auto 35%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-image: var(--gradient-alpha-light);
 }
 main p a:hover {
   color: var(--text-color);
-  padding: 3px 3px;
-  margin: 0 -3px;
-  background-image: linear-gradient(
-    transparent 0%,
-    transparent calc(50% - 6px),
-    #5fc5b4 50%,
-    #5fc5b4 100%
-  );
-  background-position: 0 calc(100% + 1px);
+  background-size: auto 100%;
+  background-position: 0 100%;
   border-radius: 6px;
+  padding: 2px 2px;
+  margin: 0 -2px;
 }
 main p a:active,
 main p a:focus {
   color: var(--text-color-black);
-  padding: 3px 3px;
-  margin: 0 -3px;
-  background: var(--gradient);
-  background-position: 0 calc(100% + 1px);
+  background-size: auto 100%;
+  background-position: 0 100%;
   border-radius: 6px;
+  padding: 2px 2px;
+  margin: 0 -2px;
+}
+main p a:active {
+  background-image: var(--gradient);
 }
 
 footer p a {
   color: var(--text-color-black);
   font-weight: var(--body-bold-weight);
   text-decoration: none;
-  padding: 3px 0;
-  border-bottom: 3px solid white;
-  transition: background-position 200ms ease-in-out;
-  background-size: 100% 200%;
-  background-position: 0 0;
+  transition: background-size 50ms ease-in-out;
+  background-size: auto 35%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%
+  );
 }
 footer p a:hover {
-  padding: 3px 3px;
-  margin: 0 -3px;
   background-image: linear-gradient(
-    transparent 0%,
-    transparent calc(50% - 6px),
-    rgb(255, 255, 255, 1) 50%,
-    rgb(255, 255, 255, 1) 100%
+    rgba(255, 255, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0.7) 100%
   );
-  background-position: 0 calc(100% + 1px);
+  background-size: auto 100%;
+  background-position: 0 100%;
   border-radius: 6px;
+  padding: 2px 2px;
+  margin: 0 -2px;
 }
 footer p a:active,
 footer p a:focus {
-  padding: 3px 3px;
-  margin: 0 -3px;
-  background: white;
-  background-position: 0 calc(100% + 1px);
+  background: rgba(255, 255, 255, 0.7);
+  background-position: 0 100%;
   border-radius: 6px;
+  padding: 2px 2px;
+  margin: 0 -2px;
+}
+footer p a:active {
+  background: white;
 }
 
 .container {
@@ -209,7 +220,7 @@ footer p a:focus {
 }
 footer {
   bottom: 0;
-  background: linear-gradient(140deg, #5fc5b4 15%, #33ccff);
+  background: var(--gradient);
   color: var(--text-color);
   text-align: center;
   padding: 1rem 0 2rem;

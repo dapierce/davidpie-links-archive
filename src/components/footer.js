@@ -5,15 +5,14 @@ const Footer = () => (
     <p>
       © {new Date().getFullYear()} David Aaron Pierce
       <br />
-      Built with{" "}
+      Built with{` `}
       <span className="emoji">
         <span role="img" aria-label="coffee">
-          ☕
+          <a href="https://ko-fi.com/dapierce">☕</a>
         </span>
-      </span>{" "}
-      and
+      </span>
       {` `}
-      <a href="https://www.gatsbyjs.org">Gatsby</a>
+      and <a href="https://www.gatsbyjs.org">Gatsby</a>
     </p>
   </footer>
 )
