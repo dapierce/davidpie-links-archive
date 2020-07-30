@@ -1,16 +1,10 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# David🥧 my personal portfolio
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/85676aa8-3712-4a94-948e-b0e176727841/deploy-status)](https://app.netlify.com/sites/davidpie/deploys)
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+My website, built using [Gatsby](https://www.gatsbyjs.org/), a static site generator that uses React and Node. I started with the [Gatsby Starter Default](https://www.gatsbyjs.org/starters/gatsbyjs/gatsby-starter-default/), and added these plugins:
+
+- [gatsby-plugin-dark-mode](https://www.gatsbyjs.org/packages/gatsby-plugin-dark-mode/)
 
 ## 🚀 Quick start
 

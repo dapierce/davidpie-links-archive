@@ -8,14 +8,18 @@ const toggleStyle = {
   padding: `2px`,
 }
 const inputStyle = {
-  display: `none`,
+  position: `absolute`,
+  opacity: `0`,
+  height: `0`,
+  width: `0`,
 }
 
 const ThemeToggle = () => (
   <ThemeToggler>
     {({ theme, toggleTheme }) => (
-      <label style={toggleStyle}>
+      <label for="theme-toggle" style={toggleStyle}>
         <input
+          id="theme-toggle"
           style={inputStyle}
           type="checkbox"
           onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
