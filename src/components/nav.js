@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import ThemeToggle from "./themetoggle"
 import styles from "./styles/nav.module.css"
 
 const activeNavlinkStyle = {
@@ -29,7 +30,7 @@ const Nav = ({ location }) => (
         </li>
       </ul>
       <ul className={styles.navlinks}>
-        {/* <li>
+        <li>
           <Link to="/projects" activeStyle={activeNavlinkStyle}>
             Projects
           </Link>
@@ -43,8 +44,9 @@ const Nav = ({ location }) => (
           <Link to="/resume" activeStyle={activeNavlinkStyle}>
             Resume
           </Link>
-        </li> */}
+        </li>
       </ul>
+      <ThemeToggle />
     </div>
   </nav>
 )

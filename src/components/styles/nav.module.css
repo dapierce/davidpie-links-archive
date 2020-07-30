@@ -3,7 +3,7 @@ nav {
 }
 .navbar {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto 1fr auto;
   max-width: var(--content-width);
   margin: 0 auto;
   padding: 0 2rem;
