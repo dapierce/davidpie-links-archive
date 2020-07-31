@@ -1,11 +1,11 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 
 const toggleStyle = {
   cursor: `pointer`,
-  fontSize: `1.6rem`,
-  margin: `.6rem 0 0 1rem`,
-  padding: `2px`,
+  fontSize: `1.2rem`,
 }
 const inputStyle = {
   position: `absolute`,
@@ -25,7 +25,11 @@ const ThemeToggle = () => (
           onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
           checked={theme === "dark"}
         />
-        {theme === "dark" ? `☀️` : `🌙`}
+        {theme === "dark" ? (
+          <FontAwesomeIcon icon={faSun} />
+        ) : (
+          <FontAwesomeIcon icon={faMoon} />
+        )}
       </label>
     )}
   </ThemeToggler>

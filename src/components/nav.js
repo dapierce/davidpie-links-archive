@@ -46,7 +46,11 @@ const Nav = ({ location }) => (
           </Link>
         </li>
       </ul>
-      <ThemeToggle />
+      <ul className={styles.navlinks}>
+        <li>
+          <ThemeToggle />
+        </li>
+      </ul>
     </div>
   </nav>
 )

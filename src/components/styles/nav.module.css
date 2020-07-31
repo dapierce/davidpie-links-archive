@@ -8,9 +8,6 @@ nav {
   margin: 0 auto;
   padding: 0 2rem;
 }
-.navbar a {
-  font-size: 1.4rem;
-}
 .title a,
 .navlinks a {
   color: var(--text-color);
@@ -112,24 +109,32 @@ nav {
   margin-bottom: 1rem;
 }
 
-@media only screen and (max-width: 620px) {
+@media only screen and (min-width: 900px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
   nav {
     padding: 0 1rem;
   }
-  .navbar a {
-    font-size: 1.2rem;
-  }
-  .navbar li {
-    padding: 0 2px;
+
+  .navlinks li {
+    margin-left: 2rem;
   }
   /* .title__text {
     display: none;
   } */
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
   nav {
     padding: 0 6px;
+  }
+  .title a {
+    width: 46px;
+    height: 52px;
   }
   .navbar {
     /* grid-template-columns: 88px 1fr; */
