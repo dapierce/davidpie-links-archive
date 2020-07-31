@@ -16,19 +16,17 @@ const activeNavlinkStyle = {
 const Nav = ({ location }) => (
   <nav className={styles.nav}>
     <div className={styles.navbar}>
-      <ul className={styles.title}>
-        <li>
-          <Link
-            to="/"
-            activeStyle={{ backgroundColor: `white`, color: `#444444` }}
-          >
-            <span role="img" aria-label="pie">
-              🥧
-            </span>
-            <span className={styles.title__text}> David Pierce</span>
-          </Link>
-        </li>
-      </ul>
+      <header className={styles.title}>
+        <Link
+          to="/"
+          activeStyle={{ backgroundColor: `white`, color: `#444444` }}
+        >
+          <span role="img" aria-label="pie">
+            🥧
+          </span>
+          <span className={styles.title__text}> David Pierce</span>
+        </Link>
+      </header>
       <ul className={styles.navlinks}>
         <li>
           <Link to="/projects" activeStyle={activeNavlinkStyle}>
@@ -46,7 +44,7 @@ const Nav = ({ location }) => (
           </Link>
         </li>
       </ul>
-      <ul className={styles.navlinks}>
+      <ul className={styles.toggle}>
         <li>
           <ThemeToggle />
         </li>

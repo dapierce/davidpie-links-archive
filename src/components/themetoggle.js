@@ -1,7 +1,5 @@
 import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons"
 
 const toggleStyle = {
   cursor: `pointer`,
@@ -17,20 +15,27 @@ const inputStyle = {
 const ThemeToggle = () => (
   <ThemeToggler>
     {({ theme, toggleTheme }) => (
-      <label for="theme-toggle" style={toggleStyle}>
+      <div>
         <input
           id="theme-toggle"
           style={inputStyle}
           type="checkbox"
           onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
           checked={theme === "dark"}
+          aria-label="Toggle dark and light mode"
         />
-        {theme === "dark" ? (
-          <FontAwesomeIcon icon={faSun} />
-        ) : (
-          <FontAwesomeIcon icon={faMoon} />
-        )}
-      </label>
+        <label for="theme-toggle" style={toggleStyle}>
+          {theme === "dark" ? (
+            <span role="img" aria-label="Toggle light mode">
+              ☀️
+            </span>
+          ) : (
+            <span role="img" aria-label="Toggle dark mode">
+              🌙
+            </span>
+          )}
+        </label>
+      </div>
     )}
   </ThemeToggler>
 )

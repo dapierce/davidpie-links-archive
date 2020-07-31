@@ -62,7 +62,7 @@ const Links = () => (
       <li>
         <Button
           to="https://ko-fi.com/dapierce"
-          ariaLabel="Ko-fi"
+          ariaLabel="Buy me coffee"
           icon={faCoffee}
         >
           Buy me coffee!
