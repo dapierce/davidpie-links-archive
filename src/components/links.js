@@ -5,11 +5,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faGithub,
   faGitlab,
-  faTwitter,
   faKeybase,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
-import { faCoffee } from "@fortawesome/free-solid-svg-icons"
+import { faCoffee, faEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const Links = () => (
   <div className="links">
@@ -43,15 +42,6 @@ const Links = () => (
       </li>
       <li>
         <Button
-          to="https://twitter.com/da_pierce"
-          ariaLabel="Twitter"
-          icon={faTwitter}
-        >
-          Twitter
-        </Button>
-      </li>
-      <li>
-        <Button
           to="https://keybase.io/dapierce"
           ariaLabel="Keybase"
           icon={faKeybase}
@@ -66,6 +56,15 @@ const Links = () => (
           icon={faCoffee}
         >
           Buy me coffee!
+        </Button>
+      </li>
+      <li>
+        <Button
+          to="mailto:davidaaronpierce@gmail.com"
+          ariaLabel="Email"
+          icon={faEnvelope}
+        >
+          Send me email!
         </Button>
       </li>
     </ul>
